@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div>
+        <div class="box">
+            <div class="box">
+                <div id="hmid" style="float:right; "></div><div id="social" style="float:right;margin-right:10px;"><a href="http://www.uou.ac.in/crs" target="_blank" title="Internet Radio"><img height="25" width="24" alt="UoU Internet Radio" src="Images/radio.png" /></a><a href="http://www.facebook.com/uoulive" target="_blank"><img height="25" width="24" alt="UoU FB" src="Images/fbook_ico.png" /></a><a href="http://twitter.com/uoulive" target="_blank"><img height="24" width="24" alt="UoU Twitter" src="Images/twit_ico.png" /></a><a href="http://www.youtube.com/user/uoulive" target="_blank"><img height="24" width="24" alt="UoU Youtube" src="Images/yt.png" /></a></div>
+                <div style="height:150px;padding-top:15px;">
+                    <div align="center" style="float:left;margin-left:15px;padding-right:10px;"><a style="border:none;" href="http://uou.ac.in"><img style="border:none;" src="Images/uoulogo.png" alt="" /></a> </div><div style="float:left; width:620px;">
+                        <div style="font-family: 'Tangerine', serif;font-size:22px;color:#1A59B1;padding-top:10px;float:left;width:600px; " id="hd1">UTTARAKHAND OPEN UNIVERSITY</div><div align="left" style="font-family:Kokila;color:#1A59B1; font-size:24px;line-height:28px;float:left;width:600px;" id="hindi">उत्तराखण्ड मुक्त विश्वविद्यालय</div>
+                        <div id="est" style="font-size:11px;line-height:14px;">
+                            Established by an act of <a target="_blank" href="http://ua.nic.in/uk.gov.in/details/view/107-universites---institutes">Uttarakhand </a>Legislative Assembly <br />
+                            Recognized by <a href="http://www.ugc.ac.in/stateuniversitylist.aspx?id=34&Unitype=2" target="_blank">UG</a><a target="_blank" href="http://uou.ac.in/system/files/ugc_recogni.pdf">C</a>, <a target="_blank" href="http://www.dec.ac.in">DEC</a>, listed in <a target="_blank" href="http://www.aiuweb.org/Members/MembersU.asp">AIU</a>
+                        </div>
+                    </div><div id="hmid2" style="width:190px;font-size:11px;line-height:13px; font-weight:bold;height:85px;float:right;margin-top:10px; background:url(Images/toll1.png)  no-repeat;"><div style="padding-left:35px; margin-right:10px;text-align:right; float:right;">Toll Free: 18001804025<br />Admission: 05946286002<br />Exam: +91-5946286022<br />Books: +91-5946286001<br />Others: +91-5946286000<br />(10am - 5pm : Mon- Sat)<p><a href="http://www.uou.ac.in/subscribe" title="Subscribe Now"><img alt="Subscribe" src="Images/nletter.png" height="32px" width="132px" /></a></p></div></div>
+
+                </div><nav id="menu-wrap">
+                    <ul id="menu">
+                        <li><a href="/home" target="_blank">Home</a></li>
+
+                        <li>
+                            <a href="http://www.uou.ac.in/about">About Us</a>
+
+                        </li>
+                        <li>
+                            <a href="http://www.uou.ac.in/schools">Schools</a>
+
+                        </li>
+
+
+                        <li><a href="http://www.uou.ac.in/admissions">Admissions</a></li>
+                        <li><a href="http://www.uou.ac.in/rti">RTI</a></li>
+                        <li><a href="http://www.uou.ac.in/careers">Careers</a></li>
+                        <li><a href="http://www.uou.ac.in/exam">Exams</a></li>
+                        <li><a href="http://gallery.uou.ac.in/">Gallery</a></li>
+                        <li><a href="http://www.uou.ac.in/press">Media</a></li>
+                        <li><a href="http://www.uou.ac.in/rc">Centres</a></li>
+                        <li><a href="http://www.uou.ac.in/contact">Contact</a></li>
+
+                    </ul>
+                </nav>
+               
+                      <section class="container">
+                          @RenderBody()
+                      </section>
+            </div>
+        </div>
+    </div>
+
+    <div style="left: 0;bottom: 0;height: 80px;width: 100%;background-color:#CCCCCC;text-align:center;	padding:10px;">
+        <p>
+            <a href="http://www.uou.ac.in/about" target="_blank">About Us</a> | <a href="http://www.uou.ac.in/one">Results</a> | <a href="http://www.uou.ac.in/schools">Schools</a> | <a href="http://www.uou.ac.in/sc"> Centres</a> | <a href="http://www.uou.ac.in/careers"> Careers</a> | <a href="http://www.uou.ac.in/admissions">Admissions </a> | <a href="http://www.uou.ac.in/exams">Exams</a>  | <a href="Downloads/refund.html" target="_blank">Refund Policy</a> | <a href="Downloads/privacy.html" target="_blank">Privacy</a> | <a href="Downloads/Terms conditions.pdf" target="_blank">Terms and Condition</a> | <a href="http://www.uou.ac.in/contact">Contact</a> <br />
+            © 2014 Uttarakhand Open University | <a href="http://www.uou.ac.in/disclaimer" target="_blank" style="text-decoration: none">Disclaimer</a> <br />
+            <b>This Website is best viewed on Internet Explorer (IE) - 8 & above, Mozilla Firefox - 11 & above.</b>
+        </p>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
